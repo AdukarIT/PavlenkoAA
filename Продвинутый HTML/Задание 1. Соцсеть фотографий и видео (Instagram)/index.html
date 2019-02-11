@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Instagram</title>
+</head>
+<body>
+
+	<header>
+		<h1>Instagram</h1>
+		<img src="img/Logo_instagram.png" alt="Logo instagram">
+	</header>
+
+	<main>
+		<section >
+			<h2>Форма входа</h2>
+
+			<form action="feed.html" method="get" name="input">
+				<p>
+				<label for="email">Ваш Email</label>
+				<br>
+				<input type="email" name="email" required placeholder="name@mail.ru" id="email">
+				</p>
+
+				<p>
+				<label for="password">Ваш пароль</label>
+				<br>
+				<input type="password" name="password" required placeholder="qwerty" id="password">
+				</p>
+
+				<p>
+				<input  type="submit" value="Отправить">
+				</p>
+			</form>
+		</section>
+
+		<section>
+			<h2>Форма регистрации</h2>
+			<form action="feed.html" method="get" name="registration">
+				<p>
+					<label for="name">Ваше имя</label>
+					<br>
+					<input type="text" name="name" required placeholder="Александр" id="name">
+				</p>
+
+				<p>
+					<label for="registrationEmail">Ваш Email</label>
+					<br>
+					<input type="email" name="email" required placeholder="name@mail.ru" id="registrationEmail">
+				</p>
+
+				<p>
+				<label for="firstPassword">Ваш пароль</label>
+				<br>
+				<input type="password" name="firstPassword" required placeholder="qwerty" id="firstPassword">
+				</p>
+
+				<p>
+				<label for="secondPassword">Повторите пароль</label>
+				<br>
+				<input type="password" name="secondPassword" required placeholder="qwerty" id="secondPassword">
+				</p>
+
+				<p>
+					<label for="agree">Согласны ли вы на обработку персональных данных</label>
+					<br>
+					<input type="checkbox" name="agree" id="agree" required>
+				</p>
+
+				<p>
+					<input  type="submit" value="Отправить">
+				</p>
+				
+			</form>
+		</section>
+	</main>
+
+	<footer>
+	</footer>
+	
+</body>
+</html>
