@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+}
+ body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+header, footer {
+    background-color: #FFFFB2;
+}
+ h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    color: #386B3C;
+ }
+ img {
+    display: block;
+    margin: 10px auto 30px;
+    border: 2px solid #386B3C;
+    border-radius: 50%;
+ }
+ /* стилизация основного меню*/
+.menu ul{
+   display: none; /* прячем подменю */
+}
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ nav{
+padding-bottom: 100px;
+    border-bottom: 2px solid #386B3C;
+ }
+.menu {
+    float: left;
+    list-style-type: none;
+    display: block;
+    background-color: #388E3C;
+    width: 20%;
+    height: 50px; 
+    margin-right: 4%;
+    border-radius: 30px;
+    line-height: 50px; 
+    text-align: center;
+    color: #FFFFEE;
+    font-weight: 700;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.menu:first-child {
+ margin-left: 4%;
+}
+ /* стилизация подменю */
+.subsection li a{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    border-radius: 20px;
+    border-bottom: 1px solid;
+    background-color: #38AF3C;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #FFFFEE;
+    box-sizing: border-box;
+    font-size: 14px;
+    position: relative; /* что бы выпадающее меню шло поверх контента*/
+}
+.subsection li {
+    list-style-type: none;
+ 
+}
+
+
+.menu:hover ul{
+    display: block;
+}
+.menu:hover {
+color: #388E3C;
+background-color:#FFFFEE;
+border: 1px solid  #388E3C;
+}
+.subsection li a:hover {
+    color: #388E3C;
+    background-color:#FFFFEE;
+    border: 1px solid  #388E3C;
+    z-index: 10;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Оформление контактных данных формы заказа (имя, фамилия, телефон, почта) */
+.order-form {
+	width: 35%;
+    margin: 50px auto 0;
+	border: 2px solid #3D5637;
+	border-radius: 10px;
+	align-items: center;
+	font-family: Verdana, sans-serif;
+	padding: 20px;
+	color: #37561E;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+form {
+	width: 75%;
+	margin: 0 auto;
+}
+.order-form_contacts {
+width: 200px;
+height: 30px;
+margin: 10px 15px 0 0;
+border-radius: 40px;
+padding: 0 0 0 8px;
+background: #ffe;
+border: 2px solid #35BE5F;
+}
+.order-form .order-form_contacts:focus {
+	outline: none;
+}
+
+/* Оформление контактных данных формы заказа */
+.delivery {
+	margin: 30px 0 30px 0;
+	padding: 30px 0 15px 0;
+	border-top: 3px solid #37741E;
+	border-bottom: 3px solid #37741E;
+}
+
+.order-form span {
+	display: inline-block;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+iframe, .adress-delivery {
+	margin-top: 10px;
+}
+
+.adress-delivery {
+	width: 430px;
+	height: 30px;
+	border: 1px solid #37561E;
+	border-radius: 5px;
+	padding-left: 8px;
+}
+
+textarea {
+	border: 1px solid #37561E;
+	padding-left: 8px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.consent-disabled {
+	margin-top: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #37561E;
+	background-color: rgba(53,190,95,0.5);
+	color: #FFFFEE;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.consent-active {
+	margin-top: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #37561E;
+	background-color: #35BE5F;
+	color: #FFFFEE;
+	font-size: 18px;
+	font-weight: 600;	
+}
+
+/* Блок отвечающий за отзывчивость radio и chekbox */
+iframe, .adress-delivery, .consent-active {
+  display: none;
+}
+
+.myself :checked~iframe{
+  display: block;
+}
+
+.courier :checked~.adress-delivery{
+  display: block;
+}
+
+.consent :checked~.consent-disabled {
+	display: none;
+}
+
+.consent :checked~.consent-active {
+	display: block;
+}
+
+footer {
+    border-top: 2px solid  #386B3C;
+    display: block;
+    margin-top: 50px;
+    padding-top: 30px;
+    color:  #38503C;
+}
+footer div {
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+footer div h2 {
+margin-bottom: 20px;
+}

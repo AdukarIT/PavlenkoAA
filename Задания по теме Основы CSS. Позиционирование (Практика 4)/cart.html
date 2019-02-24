@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <h1>ТЕХНОМЕН</h1>
+            <img src="img/pied-piper.png" alt="дудочник играет на трубке" >
+        </section>
+
+            <nav>
+                <ul>
+                    <li class="menu">Бытовая техника
+                        <ul class="subsection">
+                            <li><a href="#"  class="one-subsection">Стиральные машины</a></li>
+                            <li><a href="#">Стиральные машины</a></li>
+                            <li><a href="#">Пылесосы</a></li>
+                            <li><a href="#">Швейные, вышивальные машины</a></li>
+                            <li><a href="#">Утюги</a></li>
+                            <li><a href="#">Электровеники</a></li>
+                            <li><a href="#">Сушилки для обуви</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">Техника для кухни
+                        <ul class="subsection">
+                            <li><a href="#">Холодильники</a></li>
+                            <li><a href="#">Кухонные плиты</a></li>
+                            <li><a href="#">Морозильники</a></li>
+                            <li><a href="#">Настольные плиты</a></li>
+                            <li><a href="#">Ростеры, мини-печи</a></li>
+                            <li><a href="#">Вытяжки</a></li>
+                            <li><a href="#">Микроволновые печи</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">Компьютерная техника
+                        <ul class="subsection">
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Планшеты</a></li>
+                            <li><a href="#">Компьютеры, моноблоки</a></li>
+                            <li><a href="#">Игровые приставки</a></li>
+                            <li><a href="#">Серверное оборудование</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">Корзина</li>
+                </ul>
+            </nav>
+            
+        <div class="clearfix"></div>
+    </header>
+    
+    <main>
+        <section class="order-form">
+            <h2>Заполните форму заказа</h2>
+                <form action="#" method="get" name="OrderForm">
+                    <p> 
+                    <label>
+                        <input type="text" name="name"  placeholder="Илларион" class="order-form_contacts">
+                    </label>Ваше имя
+                    </p>
+            
+                    <p> 
+                        <label>
+                            <input type="text" name="surname"  placeholder="Павлов" class="order-form_contacts">
+                        </label>Ваша фамилия
+                    </p>
+            
+                    <p> 
+                        <label>
+                            <input type="tel" name="numberphone"  placeholder="+375 29 100 00 00" class="order-form_contacts" required>
+                        </label>Ваш номер телефона
+                    </p>
+            
+                    <p> 
+                        <label>
+                            <input type="email" name="email" placeholder="name@mail.com" class="order-form_contacts" required>
+                        </label>Ваш email
+                    </p>
+            
+                    <div class="delivery">
+                        <span>Выберите способ доставки</span>
+                            <div class="myself">
+                                <input type="radio" name="delivery" value="myself" > Самовывоз со склада по адресу
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.42338696981216!2d27.55043363727919!3d53.90276247631775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfc698a4972f%3A0x3da1914bc6e74f42!2z0JDQtNGD0LrQsNGA!5e0!3m2!1sru!2sby!4v1550841045656" width="350" height="200" style="border: 1px solid #37561E;" allowfullscreen></iframe>
+                            </div>
+            
+                            <div class="courier">
+                                <p>
+                                    <input type="radio" name="delivery" value="courier"> Курьером по Минску
+                                        <br>
+                                    <input type="text" name="adress" placeholder="Ваш адрес" class="adress-delivery">
+                                </p>
+                            </div>
+                            </div>
+            
+                        <label><span>Комментарий:</span>
+                            <br>
+                                <textarea cols="59" rows="3" name="comment" placeholder="Ваш замечательный текст"></textarea>
+                        </label>
+            
+                        <div class="consent">
+                            <input type="checkbox" name="agree" value="agree"> Я прочитал и согласен с <a href="#">условиями</a> доставки
+                        <br>
+                            <input type="submit" value="Подтвердить заказ" class="consent-disabled" disabled>
+                            <input type="submit" value="Подтвердить заказ" class="consent-active" >
+                        </div>
+            
+                    </form>
+                </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Наши контакты</h2>
+            <p><b>Номер телефона:</b> +375 11 111 11 11</p>
+            <p><b>Адрес самовыовза:</b> ул.Лорема Ипсума,13, оф.13</p>
+            <p><b>Время работы:</b> Пн-Пт 8.00 - 20.00</p>
+            <p><b>Skype:</b> pavlusha</p>
+        </div>  
+    </footer>
+</body>
+</html>
