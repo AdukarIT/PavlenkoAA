@@ -30,12 +30,13 @@ img {
     left: 218px;
     bottom: 20px;
 }
-button {
+div button {
     width: 70px;
     height: 40px;
     font-size: 16px;
     background-color: whitesmoke;
     border: 1px solid #000000;
     border-radius: 5px;
-    margin-left: 310px;
+    /*margin-left: 310px;*/
+    margin: 0 auto;
 }
