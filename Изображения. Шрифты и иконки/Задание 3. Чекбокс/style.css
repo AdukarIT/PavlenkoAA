@@ -1,0 +1,15 @@
+.switch [type="checkbox"] {
+    display: none;
+}
+
+.switch .check {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background-image: url(img/icons8-пустой-чекбокс-100.png);
+	background-repeat: no-repeat;
+}
+
+.switch :checked~.check {
+    background-image: url(img/icons8-отмеченный-чекбокс-100.png);
+}

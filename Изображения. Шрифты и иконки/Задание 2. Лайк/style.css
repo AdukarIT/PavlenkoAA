@@ -1,0 +1,19 @@
+.switch [type="checkbox"] {
+    display: none;
+}
+i {
+	font-size: 50px;
+	color: grey;
+}
+
+i:hover {
+	color: #0078D7;
+}
+
+.switch :checked~i {
+    color: #EE5555;
+}
+
+.switch :checked~i:hover {
+	color: rgba(238,85,85,0.3);
+}
