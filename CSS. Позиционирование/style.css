@@ -6,7 +6,7 @@ body {
     height: 250px;
     border: 1px solid #000000;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 100px;
 }
@@ -26,9 +26,9 @@ span {
 }
 img {
     width: 15px;
-    position: relative;
-    left: 218px;
-    bottom: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 div button {
     width: 70px;
@@ -37,6 +37,7 @@ div button {
     background-color: whitesmoke;
     border: 1px solid #000000;
     border-radius: 5px;
-    /*margin-left: 310px;*/
-    margin: 0 auto;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
