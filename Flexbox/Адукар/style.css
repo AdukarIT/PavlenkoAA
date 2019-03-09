@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.fon-img {
+    background-image: url(img/ecqfrRqOeR8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.filter {
+    background-image: linear-gradient(to bottom, 
+    rgba(0,0,0,0.5), 
+    rgba(46,18,18,0.6));
+    min-height: 630px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    width: 311px;
+    margin-left: 2%;
+}
+.logo img {
+    max-width: 150px;
+}
+
+
+.header-social {
+    min-width: 311px;
+    margin-right: 2%;
+}
+
+.header-social a {
+    padding: 0 5px 0 5px;
+}
+
+.header-social span a {
+    padding-right: 30px;
+    vertical-align: super;
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 15px 0 15px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.title p {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.content img {
+    display: block;
+    width: 60px;
+    float: left;
+    margin-right: 5px;
+}
+
+.content span {
+    display: block;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 400;
+    width: 310px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.content > div {
+    margin: 0 2% 0 2%;
+}
+
+.start-groups {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.buttom {
+    display: block;
+    line-height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #e55;
+    border: 1px solid #e55;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    width: 310px;
+    height: 45px;
+    margin: 18px auto 0 auto;
+    margin-bottom: 20px;
+}
