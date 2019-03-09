@@ -32,3 +32,6 @@
 
 ## Практика.
 ##### Задание. [Четырехстраничный сайт](https://github.com/AdukarIT/PavlenkoAA/tree/master/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0)
+
+## Flexbox.
+##### Задание. [Адукар]()
