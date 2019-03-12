@@ -35,3 +35,4 @@
 
 ## Flexbox.
 ##### Задание. [Адукар](https://github.com/AdukarIT/PavlenkoAA/tree/master/Flexbox/%D0%90%D0%B4%D1%83%D0%BA%D0%B0%D1%80)
+##### Задание. [ВКонтакте](https://github.com/AdukarIT/PavlenkoAA/tree/master/Flexbox/%D0%90%D0%B4%D1%83%D0%BA%D0%B0%D1%80)
