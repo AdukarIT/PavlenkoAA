@@ -1,0 +1,98 @@
+.adv {
+	width: 100%;
+	height: 454px;
+	display: flex;
+	flex-flow: column wrap;
+}
+a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Open Sans', Helvetica, Verdana, sans-serif;
+}
+
+article[class^="banner"] {
+	width: 25%;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.banner-big {
+	flex-basis: 100%;
+}
+.banner-small {
+	flex-basis: 50%;
+}
+
+.banner__inside {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 25px 25px 20px;
+}
+.banner-big > .banner__inside {
+	height: 454px;
+}
+.banner-small > .banner__inside {
+	height: 227px;
+}
+.banner__inside > img {
+	max-width: 90%;
+	height: auto;
+	flex-grow: 0;
+}
+.banner__inside > h2, 
+.banner__inside > h3 {
+	margin: 0;
+} 
+.banner__inside > h2 {
+	flex-grow: 0;
+	font-size: 16px;
+	line-height: 1.25;
+}
+.banner__inside > h3 {
+	font-weight: normal;
+	flex-grow: 1;
+	font-size: 13px;
+	padding-bottom: 20px;
+}
+
+/* цвет блоков и ширина картинок */
+
+.banner-one {
+	background: #E2A33C;
+}
+.banner-one img {
+	width: 70%;
+}
+.banner-two {
+	background: #00B1BB;
+}
+.banner-two img {
+	width: 60%;
+}
+.banner-three {
+	background: #7FC3EF;
+}
+.banner-three img {
+	width: 75%;
+}
+.banner-for {
+	background: #8985FF;
+}
+.banner-for img {
+	width: 75%;
+}
+.banner-five {
+	background: #F48780;
+}
+.banner-five img {
+	width: 60%;
+}
+.banner-six {
+	background: #005C9D;
+}
+.banner-six img {
+	width: 45%;
+}
