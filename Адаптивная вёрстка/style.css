@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	min-height: 60px;
+}
+
+.logo {
+	display: block;
+	width: 60px;
+	margin: 0 5%;
+	float: left;
+}
+
+.burger {
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin: 5px 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-image: url(img/menu.png);
+	background-size: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.menu {
+	clear: right;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #fff;
+	display: block;
+}
+
+.menu > li {
+	height: 60px;
+	width: 100%;
+	display: block;
+	line-height: 60px;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+.menu > li > a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	height: 50px;
+}
+
+
+#menu-toggle, .hidden {
+	display: none;
+}
+#menu-toggle:checked + .burger {
+	background-image: url(img/menu-close.png);
+	background-size: 50px;
+	background-position: center;
+}
+#menu-toggle:checked ~ .hidden {
+	display: block;
+}
+
+article {
+	background-color: #ddd;
+	min-height: 300px;
+	text-align: center;
+}
+
+article div img {
+	display: inline-block;
+	max-width: 80%;
+	text-align: center;
+}
+
+.navigation {
+	box-sizing: border-box;
+	background-color: #999;
+	min-height: 100px;
+	padding: 20px;
+}
+ 
+footer {
+	background-color: #333;
+	min-height: 100px;
+	color: #fff;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+}
+
+@media (max-width: 450px) {
+	article div img {
+		display: none;
+	}
+}
+
+@media (min-width: 450px){
+	.burger {
+		display: none;
+	}
+	.menu {
+		display: flex;
+		border-top: 0;
+	}
+	.menu > li {
+		width: auto;
+		flex-grow: 1;
+		border-left: 1px solid #fff;
+		border-bottom: 0;
+	}
+}
+
+@media (min-width: 700px) {
+	.menu {
+		float: right;
+	}
+	.menu > li > a {
+		padding: 0 50px;
+	}
+	.menu > li  {
+		max-width: 400px;
+	}
+
+	main {
+		display: flex;
+		justify-content: center;
+		flex-direction: row-reverse;
+		position: relative;
+	}
+	.navigation {
+		min-width: 256px;
+	}
+	article div img {
+		width: 50%;
+		display: block;
+		float: left;
+	}
+	article div {
+		position: absolute;
+		bottom: 0;
+	}
+	article {
+		position: relative;
+	}
+}
+
+@media (min-width: 1024px) {
+	article {
+		width: 794px;
+	}
+}
