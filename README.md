@@ -42,5 +42,5 @@
 ##### Практика. [Медиа запросы](https://github.com/AdukarIT/PavlenkoAA/tree/master/%D0%90%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0)
 
 ## Эффекты. Анимация.
-##### [Практика и домашняя работа]
+##### Практика и домашняя работа. [Задания]
 (https://github.com/AdukarIT/PavlenkoAA/tree/master/%D0%AD%D1%84%D1%84%D0%B5%D0%BA%D1%82%D1%8B.%20%D0%90%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F)
