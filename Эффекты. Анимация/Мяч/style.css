@@ -1,0 +1,20 @@
+.ball [type="checkbox"] {
+    display: none;
+}
+
+.box-for-ball {
+    margin: 50px auto;
+    width: 800px;
+    height: 50px;
+    border: 3px solid #000;
+}
+img {
+    display: inline-block;
+    width: 50px;
+    transition: 2s ease-out;
+}
+
+ .ball [type="checkbox"]:checked~img {
+    transform: translateX(750px) rotate(2turn);
+}
+

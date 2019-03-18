@@ -1,0 +1,25 @@
+.switch [type="checkbox"] {
+    display: none;
+}
+i {
+	font-size: 50px;
+	color: grey;
+}
+
+i:hover {
+	color: #0078D7;
+	cursor: pointer;
+}
+
+.switch :checked~i {
+	display: inline-block;
+	color: #EE5555;
+	animation: heart 2s;
+	animation-direction: alternate;
+}
+
+
+@keyframes heart {
+	from { transform: scale(1); }
+	to { transform: scale(1.2); }
+}
