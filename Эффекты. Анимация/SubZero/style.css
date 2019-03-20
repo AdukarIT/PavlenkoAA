@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: inline-block;
+    width: 462;
+    height: 135;
+    position: absolute;
+}
+
+.show-box {
+    background-color: white;
+    width: 396px;
+    height: 135px;
+    position: absolute;
+    margin-left: 66px;
+}
+
+img:hover {
+    animation: SubZero 0.3s steps(7) alternate infinite;
+} 
+
+@keyframes SubZero {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-462px); }
+  } 
