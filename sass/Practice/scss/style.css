@@ -1,0 +1,189 @@
+header {
+  width: 100%;
+}
+header img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  display: block;
+  cursor: pointer;
+  width: 15%;
+  box-sizing: border-box;
+  border: 4px solid #FF4552;
+  text-align: center;
+  margin: 0 20px;
+  background-color: #EFE8D8;
+}
+nav ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #FF4552;
+  padding: 15px 0;
+  font-weight: bold;
+}
+nav ul li:hover {
+  background-color: #FF4552;
+}
+nav ul li:hover a {
+  color: #EFE8D8;
+}
+
+#services {
+  margin-top: 40px;
+}
+#services h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #EFE8D8;
+  text-align: center;
+  color: #FF4552;
+}
+#services ul {
+  display: flex;
+  justify-content: center;
+}
+#services ul li {
+  padding-top: 40px;
+  margin: 0 30px;
+  color: #2c090b;
+  font-weight: bold;
+  font-size: 20px;
+}
+#services ul li img {
+  vertical-align: middle;
+}
+#services p {
+  padding-top: 40px;
+  margin: 0 30px;
+  color: #2c090b;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+#services p a {
+  color: #5e5643;
+}
+
+#devices {
+  margin-top: 40px;
+}
+#devices h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #EFE8D8;
+  text-align: center;
+  color: #FF4552;
+}
+#devices .devices-lables {
+  display: flex;
+  justify-content: center;
+}
+#devices .devices-lables .devices-figure {
+  padding-top: 40px;
+  margin: 0 30px;
+  color: #2c090b;
+  font-weight: bold;
+  font-size: 20px;
+  width: 7%;
+  text-align: center;
+}
+#devices .devices-lables .devices-figure figcaption {
+  padding-top: 10px;
+}
+
+#link {
+  width: 100%;
+  border-top: 2px solid #FF4552;
+  background-color: #EFE8D8;
+  margin-top: 40px;
+}
+#link h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #EFE8D8;
+  text-align: center;
+  color: #FF4552;
+  padding-top: 20px;
+}
+#link .link-contacts {
+  width: 20%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+#link .link-contacts p {
+  color: #2c090b;
+  padding-top: 10px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+#link .link-contacts p img {
+  vertical-align: middle;
+}
+
+.comments {
+  margin-top: 40px;
+}
+.comments h1 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #EFE8D8;
+  text-align: center;
+  color: #FF4552;
+}
+.comments .comment {
+  margin: 20px auto 0;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #EFE8D8;
+  padding: 15px;
+  overflow: hidden;
+}
+.comments .comment figure {
+  float: left;
+  width: 12%;
+  margin: 10px;
+}
+.comments .comment figure figcaption {
+  width: 100%;
+}
+.comments .comment figure figcaption a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #7D858F;
+  font-weight: 700;
+  text-align: center;
+}
+.comments .comment figure img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.comments .comment blockquote {
+  color: #2c090b;
+  margin-top: 15px;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

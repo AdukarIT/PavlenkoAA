@@ -1,0 +1,54 @@
+$one-color: #EFE8D8;
+$fon-color: #FF4552;
+$text-color: #2c090b;
+
+.comments {
+    margin-top: 40px;
+    h1 {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;
+        border-top: 1px solid $one-color;
+        text-align: center;
+        color: $fon-color;
+    }
+    .comment {
+        margin: 20px auto 0;
+        width: 80%;
+        border-radius: 10px;
+        border: 1px solid $one-color;
+        padding: 15px;
+        overflow: hidden;
+        
+        figure {
+            float: left;
+            width: 12%;
+            margin: 10px;
+
+
+
+            figcaption {
+                width: 100%;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    text-decoration: none;
+                    color: #7D858F;
+                    font-weight: 700;
+                    text-align: center;
+                }
+ 
+            }
+            img {
+                width: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        blockquote {
+            color: $text-color;
+            margin-top: 15px;
+        }
+        
+    }
+}

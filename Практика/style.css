@@ -11,6 +11,15 @@ body {
 	width: 130px;
 	margin: 0 auto;
 }
+
+.logo img {
+    width: 100%;
+}
+
+#menu-toggle, .burger {
+	display: none;
+}
+
 .menu li {
     list-style-type: none;
 }
@@ -143,8 +152,7 @@ article p {
 
 /* страница с галереей */
 .gallery {
-    box-sizing: border-box;
-    padding-bottom: 40px;
+    width: 100%;
 }
 
 .title-gallery {
@@ -153,15 +161,14 @@ article p {
 
 }
 
-.img-gallery {
+/* .img-gallery {
     width: 90%;
     margin: 0 auto;
-}
+} */
 
-.img-gallery img{
-    width: 30%;
-    float: left;
-    margin: 10px 1.66% 5px 1.66%;
+.img-gallery{
+    display: inline-block;
+    width: 50%;
 }
 
 /* станица контент */
@@ -236,4 +243,129 @@ footer {
 .footer__contacts h3 {
     padding-top: 15px;
     text-align: center;
+}
+
+@media (max-width: 1023px) {
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size:16px;
+    }
+    p {
+        font-size:14px;
+    }
+    .logo {
+    width: 100px;
+    }
+    .menu li a {
+    padding: 15px 0;
+    font-size: 16px;
+}
+}
+
+@media (max-width: 699px) {
+    .logo {
+        width: 70px;
+        }
+
+    .menu li a {
+    padding: 10px 0;
+    font-size: 13px;
+}
+    h2 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size:14px;
+    }
+
+    .all-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    aside {
+        position: relative;
+        width: 100%;
+    }
+
+    article {
+    width: 100%;
+    padding: 25px;
+}
+
+article img {
+	width: 100%;
+	padding-top: 15px;
+}
+
+footer {
+    height: 120px;
+}
+
+.footer__line {
+    border-bottom: 2px solid #c1a15d;
+}
+
+.footer__contacts h3 {
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.bloks {
+    width: 50%;
+    height: 300px;
+}
+
+
+
+
+}
+
+@media (max-width: 449px) {
+ /* for a menu*/
+nav {
+    box-sizing: border-box;
+    background-color: #ff4d4d;
+}
+ .menu li a{
+	width: 100%;
+	border-bottom: 1px solid #fff;
+}
+.menu_link_line {
+    border-top: 1px solid #fff;
+}
+
+
+.burger {
+	display: block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 5px 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-image: url(img/menu.png);
+	background-size: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#menu-toggle, .hidden {
+	display: none;
+}
+#menu-toggle:checked + .burger {
+	background-image: url(img/menu-close.png);
+	background-size: 30px;
+	background-position: center;
+}
+#menu-toggle:checked ~ .hidden {
+	display: block;
+}
+
+.bloks {
+    width: 100%;
+    height: 250px;
+}
 }

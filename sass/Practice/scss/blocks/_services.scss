@@ -1,0 +1,67 @@
+$one-color: #EFE8D8;
+$fon-color: #FF4552;
+$text-color: #2c090b;
+
+@mixin flex() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin position-elemets {
+    padding-top: 40px;
+    margin: 0 30px;
+    color: $text-color;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@mixin main-text {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 1px solid $one-color;
+    text-align: center;
+    color: $fon-color;
+}
+
+#services {
+    margin-top: 40px;
+    h2 {
+        @include main-text;
+    }
+    ul {
+        @include flex;
+        li {
+            @include position-elemets;
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+    p {
+        @include position-elemets;
+        text-align: center;
+        a {
+            color: rgb(94, 86, 67);
+        }
+    }
+}
+
+#devices {
+    margin-top: 40px;
+    h2 {
+        @include main-text;
+    }
+    .devices-lables {
+        @include flex;
+        .devices-figure {
+            @include position-elemets;
+            width: 7%;
+            text-align: center;
+            figcaption {
+                padding-top: 10px;
+            }
+        }
+    }
+
+}
