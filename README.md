@@ -43,3 +43,6 @@
 
 ## Эффекты. Анимация.
 ##### Практика и домашняя работа. [Задания](https://github.com/AdukarIT/PavlenkoAA/tree/master/%D0%AD%D1%84%D1%84%D0%B5%D0%BA%D1%82%D1%8B.%20%D0%90%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F)
+
+## SCSS.
+##### Практика. [Сервис ремонта мобильных телефонов](https://github.com/AdukarIT/PavlenkoAA/tree/master/sass/Practice)
