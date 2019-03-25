@@ -1,14 +1,9 @@
 $one-color: #EFE8D8;
 $fon-color: #FF4552;
 
-@mixin flex() {
-    display: flex;
-    justify-content: center;
-}
-
 nav {
     ul {
-        @include flex;
+        @extend %flex;
         li {
             display: block;
             cursor: pointer;

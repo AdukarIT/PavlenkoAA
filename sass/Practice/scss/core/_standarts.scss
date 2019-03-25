@@ -1,0 +1,25 @@
+$one-color: #EFE8D8;
+$fon-color: #FF4552;
+$text-color: #2c090b;
+
+%main-text {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 1px solid $one-color;
+    text-align: center;
+    color: $fon-color;
+}
+
+%flex {
+    display: flex;
+    justify-content: center;
+}
+
+%position-elemets {
+    padding-top: 40px;
+    margin: 0 30px;
+    color: $text-color;
+    font-weight: bold;
+    font-size: 20px;
+}

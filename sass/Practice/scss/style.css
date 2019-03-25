@@ -7,10 +7,6 @@ header img {
   margin: 0 auto;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-}
 nav ul li {
   display: block;
   cursor: pointer;
@@ -39,34 +35,10 @@ nav ul li:hover a {
 #services {
   margin-top: 40px;
 }
-#services h2 {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-top: 1px solid #EFE8D8;
-  text-align: center;
-  color: #FF4552;
-}
-#services ul {
-  display: flex;
-  justify-content: center;
-}
-#services ul li {
-  padding-top: 40px;
-  margin: 0 30px;
-  color: #2c090b;
-  font-weight: bold;
-  font-size: 20px;
-}
 #services ul li img {
   vertical-align: middle;
 }
 #services p {
-  padding-top: 40px;
-  margin: 0 30px;
-  color: #2c090b;
-  font-weight: bold;
-  font-size: 20px;
   text-align: center;
 }
 #services p a {
@@ -76,24 +48,7 @@ nav ul li:hover a {
 #devices {
   margin-top: 40px;
 }
-#devices h2 {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-top: 1px solid #EFE8D8;
-  text-align: center;
-  color: #FF4552;
-}
-#devices .devices-lables {
-  display: flex;
-  justify-content: center;
-}
 #devices .devices-lables .devices-figure {
-  padding-top: 40px;
-  margin: 0 30px;
-  color: #2c090b;
-  font-weight: bold;
-  font-size: 20px;
   width: 7%;
   text-align: center;
 }
@@ -108,12 +63,6 @@ nav ul li:hover a {
   margin-top: 40px;
 }
 #link h2 {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-top: 1px solid #EFE8D8;
-  text-align: center;
-  color: #FF4552;
   padding-top: 20px;
 }
 #link .link-contacts {
@@ -184,6 +133,28 @@ nav ul li:hover a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#services h2, #devices h2, #link h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #EFE8D8;
+  text-align: center;
+  color: #FF4552;
+}
+
+nav ul, #services ul, #devices .devices-lables {
+  display: flex;
+  justify-content: center;
+}
+
+#services ul li, #services p, #devices .devices-lables .devices-figure {
+  padding-top: 40px;
+  margin: 0 30px;
+  color: #2c090b;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,23 +1,10 @@
-$one-color: #EFE8D8;
-$fon-color: #FF4552;
-$text-color: #2c090b;
-
-@mixin main-text {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 40px;
-    border-top: 1px solid $one-color;
-    text-align: center;
-    color: $fon-color;
-}
-
 #link {
     width: 100%;
     border-top: 2px solid $fon-color;
     background-color: $one-color;
     margin-top: 40px;
     h2 {
-      @include  main-text;
+        @extend %main-text;
       padding-top: 20px;
     }
     .link-contacts {
