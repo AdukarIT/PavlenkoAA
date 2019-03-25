@@ -153,6 +153,7 @@ article p {
 /* страница с галереей */
 .gallery {
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .title-gallery {
@@ -161,15 +162,14 @@ article p {
 
 }
 
-/* .img-gallery {
-    width: 90%;
-    margin: 0 auto;
-} */
-
 .img-gallery{
     display: inline-block;
-    width: 50%;
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+    margin-top: 10px;
 }
+
 
 /* станица контент */
 
@@ -204,8 +204,9 @@ article p {
 }
 
 .content-article p {
+    width: 85%;
     color: #795915;
-    padding: 5px 15px 0 0;
+    padding: 5px 15px;
 }
 
 .content-article a {
@@ -221,6 +222,8 @@ article p {
 
 }
 
+
+/* страница подвала */
 footer {
     width: 100%;
     height: 150px; 
@@ -261,7 +264,16 @@ footer {
     .menu li a {
     padding: 15px 0;
     font-size: 16px;
-}
+    }
+    .img-gallery {
+        width: 40%;
+        margin: 0 5%;
+        margin-top: 15px;
+    }
+    .content-article p {
+        width: 80%;
+        padding: 5px 15px;
+    }
 }
 
 @media (max-width: 699px) {
@@ -317,9 +329,27 @@ footer {
     height: 300px;
 }
 
+.content {
+    width: 100%;
+    float: none;
+}
 
+.content-article img {
+    width: 30%;
+}
 
+.content-article p {
+    width: 85%;
+    color: #795915;
+    padding: 5px 15px;
+}
 
+.content-article a {
+    display: inline-block;
+    position: static;
+    margin: 5px;
+
+}
 }
 
 @media (max-width: 449px) {
@@ -367,5 +397,13 @@ nav {
 .bloks {
     width: 100%;
     height: 250px;
+}
+.img-gallery{
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+}
+.content-article img {
+    width: 40%;
 }
 }
