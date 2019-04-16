@@ -47,3 +47,6 @@
 ## SCSS.
 ##### Практика. [Сервис ремонта мобильных телефонов](https://github.com/AdukarIT/PavlenkoAA/tree/master/sass/Practice)
 ##### [Домашняя работа](https://github.com/AdukarIT/PavlenkoAA/tree/master/sass/Homework)
+
+## Итоговая работа по вёрстке.
+##### [contact-1](https://pavlenuch.github.io/public/contact-1.html)
