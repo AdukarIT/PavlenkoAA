@@ -49,4 +49,6 @@
 ##### [Домашняя работа](https://github.com/AdukarIT/PavlenkoAA/tree/master/sass/Homework)
 
 ## Итоговая работа по вёрстке.
-##### [contact-1](https://pavlenuch.github.io/public/contact-1.html)
+##### [Home](https://pavlenuch.github.io/public/index.html)
+##### [Blog](https://pavlenuch.github.io/public/blog.html)
+##### [Contact](https://pavlenuch.github.io/public/contact-1.html)
