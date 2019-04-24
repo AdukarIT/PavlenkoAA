@@ -1,8 +1,0 @@
-footer {
-    .wrap-for-buttom {
-        @extend %wrap-for-buttom;
-    }
-    @media (min-width: 1200px) {
-        display: none;
-    }
-}
