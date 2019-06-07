@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form action="#" id="for_clone">
+<button type="button" id="btn" class="btn">Кнопка</button>
+<p></p>
+</form>
+
+<table id="task_2">
+	<tr>
+	    <th>Первый ряд</th>
+	    <th>Второй ряд</th>
+	    <th>Третий ряд</th>
+   </tr>
+   <tr>
+	   	<td><span>1.1</span></td>
+	   	<td><span>1.2</span></td>
+	   	<td><span>1.3</span></td>
+   </tr>
+   <tr>
+	   	<td><span>2.1</span></td>
+	   	<td><span>2.2</span></td>
+	   	<td><span>2.3</span></td>
+   </tr>
+      <tr>
+	   	<td><span>3.1</span></td>
+	   	<td><span>3.2</span></td>
+	   	<td><span>3.3</span></td>
+   </tr>
+</table>
+<!-- task_3 -->
+    <p><input name="dzen" type="radio"  value="bordered" onclick="fun1()"> Рамочка</p>
+    <p><input name="dzen" type="radio"  value="striped" onclick="fun2()"> Полосочка</p>
+    <p><input name="dzen" type="radio"  value="highlight" onclick="fun3()"> Цвет текста</p>
+
+
+<p class="task_4">
+	<input type="button" id="btn2" value="Кнопка">
+	<button type="button" id="btn3">Отменить</button>
+</p>
+
+
+<!-- task_5 -->
+<div>
+<div class="task_5 task_5_div color_text" id="task_5_div">Кнопочка 1</div>
+<p class="task_5 task_5_p color_text">Кнопочка 2</p>
+<button class="task_5 task_5_btn color_text">Кнопочка 3</button>
+<a href="#" class="task_5 task_5_a color_text">Кнопочка 4</a>
+</div>
+
+<!-- task_6 -->
+<img src="img/9.png" alt="Rick" id="task_6_img">
+
+<!-- task_7 -->
+<div id="for_smallImg">
+<img src="img/mrpoopybutthole.jpeg" alt="mrpoopybutthole" id="task_7_img" class="task_7_style" onclick="getBigImg()">
+<img src="img/4-1.png" alt="mrpoopybutthole" id="task_7_img1" class="task_7_style" onclick="getBigImg()">
+<img src="img/10.jpg" alt="mrpoopybutthole" id="task_7_img2" class="task_7_style" onclick="getBigImg()">
+</div>
+
+<div class="for_imgBig">
+	<img id="task_7_imgBig" class="imgBig_null">
+</div>
+
+
+
+
+<style>
+/*task_7*/
+	*{
+		margin: 0;
+	}
+	#for_smallImg{
+		width: 80%;
+		margin: 20px auto 0 auto;
+		display: flex;
+		justify-content: center;
+
+	}
+.for_imgBig{
+	min-height: 100%;
+	/*width: 100%;*/
+	background-color: rgba(40,41,35,.5);
+	position: absolute;
+	top: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imgBig_null{
+	display: none;
+}
+#task_7_imgBig{
+	width: 70%;
+}
+.task_7_style{
+	width: 150px;
+	cursor: pointer;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*task_6*/
+#task_6_img{
+	margin: 15px;
+	width: 200px;
+	cursor: pointer;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*task_5*/
+.color_text{
+	margin: 15px;
+background-color: #74B570;
+color: #ffffff;
+font-size: 18px;
+font-weight: bold;
+}
+.task_5_div, .task_5_p{
+	padding: 15px;
+	display: inline-block; 
+	cursor: pointer;
+}
+.task_5_btn{
+	padding: 15px;
+	border: 0px solid rgba(0,0,0,0);
+	outline:none;
+	cursor: pointer;
+}
+.task_5_a{
+	text-decoration: none;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.task_4{
+	margin: 10px;
+}
+	table{
+		margin: 10px;
+		border-collapse: collapse;
+		box-sizing: border-box;
+		border: 1px solid rgba(0,0,0,0);;
+	}
+	.highlight{
+		color: #FFDD00;
+	}
+	.bordered{
+		border: 1px solid #000000;
+	}
+	.striped:nth-child(2n) {background: #f4f4f4;}
+	th, td{
+		margin: 10px;
+	}
+	#for_clone{
+		margin: 10px;
+	}
+</style>
+
+	<script src='work.js'></script>
+
+</body>
+</html>
