@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Формы</title>
+	<script src="script.js"></script>
+</head>
+<body>
+
+<form id="form" action="#" method="post" name="form" onsubmit="return false">
+  <input type="email" name="email" id="email" placeholder="email" />
+  <input type="password" name="password" id="password" value="password" />
+  <input type="submit" name="submit" id="submit" value="Отправить" />
+</form>
+
+
+<p>
+<form onsubmit="return false">
+  Имя: <input type="text" id="name"><br>
+  Кол-во пончиков: <input type="text" id="donuts"><br>
+  Минут: <input type="text" id="minutes"><br>
+  Подитог: <input type="text" id="poditog"><br>
+  Налог: <input type="text" id="tax"><br>
+  Итог:<input type="text" id="itog"><br>
+  <input type="submit" value="заказать" onclick="placeOrder()">
+  </form>
+</p>
+
+<p>задание 2</p>
+<p>
+  <form method="post" id="formSend">
+    <input type="text"><br>
+    <input type="submit" name="" id="clearText" value="Отправить"/>
+    <input type="reset" name="" id="reset" value="Сброс" onclick="reset()" />
+  </form>
+</p>
+
+<p>задание 3</p>
+<p>
+  <form action="#" id="formCheck" method="post" onsubmit="return sendform()">
+    <input type="text" name="Текст"><br><br>
+    <input type="email" name="email" id="email" placeholder="email" /><br><br>
+    <input type="password" name="password" id="password" value="password" /><br><br>
+    <button type="submit" name="" id="checkInpyt">Проверить</button>
+  </form>
+</p>
+
+
+<p>задание 5</p>
+<form action="#" onsubmit="return false" id="formTasck5">
+  <input type="text" id="task5" size="30">
+  <input type="submit" name="submitTask5" id="submitTask5" value="Отправить" />
+</form>
+
+<p>задание 6</p>
+<form action="#" onsubmit="return getAnswer()" id="formTasck6">
+  <input type="text" id="task6" size="30">
+  <input type="text" id="task6_answer" size="30">
+  <input type="submit" name="submitTask6" id="submitTask6" value="Отправить" />
+</form>
+
+
+
+</body>
+</html>
