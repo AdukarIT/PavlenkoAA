@@ -110,23 +110,26 @@ let clock = function(h, m, event){
 clock();
 
 function GetSec(){
-	this.h = 17;
+	/*this.h = 17;
 	this.m = 0;
-	this.event = 'Get up!';
+	this.event = 'Get up!';*/
 	let hou = document.getElementById('hour').innerHTML;
 	let min = document.getElementById('minut').innerHTML;
 	let sec = document.getElementById('secon').innerHTML;
 
-	if(hou==this.h && min==this.m && sec == 0){
-  	let bell = new Audio('https://zvukipro.com/uploads/files/2018-12/1543852412_u_edomlenie-9.mp3');
-		
-		function playClip(bel) {
-  			bel.play();
-		}
-		playClip(bell);
-		console.log(event);
+	if(hou==18 && min==6 && sec == 48){
+		//playClip(bell);
+		clearTimeout(time);
+		ring();
+	} else {
+		setTimeout(GetSec, 1000);
 	}
-	setTimeout(GetSec, 1000);
 }
-let time = new GetSec();
+let time = setTimeout(GetSec, 0);
 // задача до конца не выполнена, т.к. не передаются параметры
+
+function ring() {
+	let bell = new Audio('https://zvukipro.com/uploads/files/2018-12/1543852412_u_edomlenie-9.mp3');
+	//console.log(event);
+	bell.play();
+}
