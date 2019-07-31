@@ -1,0 +1,25 @@
+form{
+  padding: 15px;
+  width: 210px;
+  height: 210px;
+  border: 1px solid #000;
+  margin: 50px;
+}
+#span_name, #span_tel,
+#span_email, #span_text{
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: #bdbdbd;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid #000;
+}
+#span_text{
+margin-left: 14px;
+}
+input, textarea{
+  margin-top: 10px;
+  float: left;
+}

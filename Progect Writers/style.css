@@ -379,3 +379,50 @@ nav img{
     0% {opacity: 0;}
     100% { opacity: 1;}
 }
+#filter{
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid #572c01;
+    background-color: rgb(241, 234, 212);
+    margin-left: 5px;
+    color: #381d01;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+ nav label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #572c01;
+    margin-left: 20px;
+ }
+
+ #sort_name{
+    margin-left: 35px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 8px 10px 9px;
+    border: 1px solid #572c01;
+    background-color: rgb(241, 234, 212);
+    cursor: pointer;
+    color: #381d01;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ #sort_name:hover{
+    border: 1px solid rgb(241, 234, 212);
+    color: rgb(241, 234, 212);
+    background-color: #7a3e01;
+ }
+ #reset_server{
+     position: absolute;
+     right: 2px;
+     top: 2px;
+     cursor: pointer;
+     font-size: 6px;
+ }

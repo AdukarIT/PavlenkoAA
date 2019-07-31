@@ -10,6 +10,7 @@ let writers = [
   genre: "повесть, рассказ, публицистика, эссе",
   achievement: "Народный писатель Беларуси, Герой Социалистического Труда",
   photo: "img/bykov.jpg",
+  period: "soviet",
   works: [{
     title: "Мёртвым не больно",
     style: "реализм",
@@ -34,6 +35,7 @@ let writers = [
   genre: "повесть",
   achievement: "Нобелевская премия по литературе (2015)",
   photo: "img/Aleksievich.jpg",
+  period: "actual",
   works: [{
     title: "У войны не женское лицо",
     style: "документальная литература",
@@ -59,6 +61,7 @@ let writers = [
   direction: "исторический роман", 
   achievement: "Орден Дружбы Народов",
   photo: "img/korotkevich.jpg",
+  period: "soviet",
   works: [{
     title: "Чёрный замок Ольшанский",
     style: "	детектив, исторический роман",
@@ -81,6 +84,7 @@ let writers = [
   direction: "историческая проза, детектив", 
   achievement: "Лауреат Национальной литературной премии",
   photo: "http://www.movananova.by/wp-content/uploads/2016/10/BS_7297.jpg",
+  period: "actual",
   works: [{
     title: "Подземелья Ромула",
     style: "Фантастика, приключения, детектив",
@@ -97,6 +101,32 @@ let writers = [
     photo_book: "https://s3-goods.ozstatic.by/2000/565/630/10/10630565_0.jpg"
   }]
 }];
+
+// установка локального сервера
+if (localStorage.getItem('myDB'))
+	writers = JSON.parse(localStorage.getItem('myDB'));
+else 
+	localStorage.setItem('myDB', JSON.stringify(writers));
+
+  // сброс локального сервера
+  document.getElementById('reset_server').addEventListener('click', function(e){
+    localStorage.clear();
+  })
+
+  // сортировка по алфавиту
+document.getElementById('sort_name').addEventListener('click', function(e){
+  writers.sort(function (a, b) {
+  if (a.name > b.name) {
+    return 1;
+  }
+  if (a.name < b.name) {
+    return -1;
+  }
+  return 0;
+});
+localStorage.setItem('myDB', JSON.stringify(writers));
+window.location.reload();
+});
 
 function getObjectById(id) {
 	for (let i = 0; i < writers.length; i++) {
@@ -117,20 +147,25 @@ function getDivById(id) {
 let wrap_blok_writer = document.createElement('div');
 document.body.appendChild(wrap_blok_writer);
 wrap_blok_writer.classList.add('wrap_blok_writer');
+wrap_blok_writer.id = 'wrap_blok_writer';
 
 let counter = 0;
 writers.forEach(function(el) {
   el.id = counter++;
 })
+
+
 for(let i = 0; i < writers.length; i++){
   getWriter(i);
 }
+
+
 function getWriter(i){
-  
   // добавляем див и ему класс
 let div = document.createElement('div');
 wrap_blok_writer.appendChild(div);
 div.classList.add('blok_writer');
+div.classList.add(writers[i].period);
 div.setAttribute('data-id', writers[i].id);
 // добавляем фотку и ей класс
 let img = document.createElement('img');
@@ -304,7 +339,7 @@ delete_writer.addEventListener('click', function() {
   let id = div.getAttribute('data-id');
   let index = getObjectById(id);
   writers.splice(index, 1);
-// localStorage.setItem('myDB', JSON.stringify(DB));
+localStorage.setItem('myDB', JSON.stringify(writers));
   div.remove();
 
 });
@@ -325,18 +360,18 @@ updateCard.addEventListener('click', function(){
   let index = getObjectById(id);
   let editForm = document.getElementsByName('edit')[0];
 
-editForm.elements.create_name.value = writers[i].name;
-editForm.elements.create_birthdate.value = writers[i].birthdate;
-editForm.elements.create_death.value = writers[i].death;
-editForm.elements.create_birthplace.value = writers[i].birthplace;
-editForm.elements.create_direction.value = writers[i].direction;
-editForm.elements.create_genre.value = writers[i].genre;
-editForm.elements.create_achievement.value = writers[i].achievement;
-editForm.elements.create_photo.value = writers[i].photo;
+editForm.elements.create_name.value = writers[index].name;
+editForm.elements.create_birthdate.value = writers[index].birthdate;
+editForm.elements.create_death.value = writers[index].death;
+editForm.elements.create_birthplace.value = writers[index].birthplace;
+editForm.elements.create_direction.value = writers[index].direction;
+editForm.elements.create_genre.value = writers[index].genre;
+editForm.elements.create_achievement.value = writers[index].achievement;
+editForm.elements.create_photo.value = writers[index].photo;
 
 editForm.setAttribute('data-dbid', index);
 
-editForm.elements.saveBtn.addEventListener('click', function(){
+editForm.elements.saveBtn.addEventListener('click', function(event){
   let formSave = this.parentElement;
 
   let newName = formSave.elements.create_name.value;
@@ -358,13 +393,13 @@ editForm.elements.saveBtn.addEventListener('click', function(){
   writers[dbid].genre = newGenre;
   writers[dbid].achievement = newAchievement;
   writers[dbid].photo = newPhoto;
-  // localStorage.setItem('myDB', JSON.stringify(DB));
+  localStorage.setItem('myDB', JSON.stringify(writers));
 	let newDiv = getWriter(writers[dbid]);
   let oldDiv = getDivById(writers[dbid].id);
   oldDiv.div.replaceChild(newDiv, oldDiv);
-  e.preventDefault();
-  console.log(dbid);
   closeWindowImg('form-create_id', 'create_form-writer', 'overlay_delete_wind', 'overlay');
+  event.preventDefault();
+  console.log(dbid);
 });
 });
 
@@ -410,11 +445,26 @@ writer.addEventListener('click', function(e){
   };
   writers.push(newWriter);
   getWriter(writers.length - 1);
-   
+  localStorage.setItem('myDB', JSON.stringify(writers));
     closeWindowImg('form_add_writer', 'form-for-add-writer', 'overlay_add_writer', 'overlay');
 })
 
 
+
+// функция для фильтра
+let filter_select = document.getElementById('filter');
+let items_el = document.getElementById('wrap_blok_writer');
+filter_select.onchange = function () {
+  console.log(this.value);
+  let items = items_el.getElementsByClassName('blok_writer');
+  for(let i = 0; i<items.length; i++){
+    if(items[i].classList.contains(this.value)){
+      items[i].style.display = 'block';
+    } else {
+      items[i].style.display = 'none';
+    }
+  }
+}
 });
 
 
