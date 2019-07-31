@@ -1,3 +1,4 @@
+API Key: a920020b8a37e76c3fb84f76eaa7fba2
 ## [CRUD](https://github.com/AdukarIT/PavlenkoAA/tree/master/Progect%20Writers)
 # Итоговая работа по вёрстке (HTML/CSS).
 ##### [Home](https://pavlenuch.github.io/public/index.html)
