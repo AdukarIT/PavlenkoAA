@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Библиотека jQuery. AJAX и анимации</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<select name="DB" id="db"></select><br>
+	<button type="button" id="btn">Получить досье</button>
+
+	<div class="data_input">
+  		<label>Username
+    		<input type='text' id="username">
+  		</label>
+  		<label>Email
+    		<input type='text' id="email">
+  		</label>
+  		<label>ADDRESS <br>
+  		Street
+    		<input type='text' id="street">
+  		</label>
+  		<label>Suite
+   			<input type='text' id="suite">
+  		</label>
+  		<label>City
+    		<input type='text' id="city">
+ 		</label>
+  		<label>Zipcode
+    		<input type='text' id="zipcode">
+  		</label>
+  		<label>GEO<br>
+    	Lat
+    		<input type='text' id="lat">
+  		</label>
+  		<label>Lng
+    		<input type='text' id="lng">
+  		</label>
+	</div>
+
+
+	<select name="DBHW" id="dbhw"></select><br>
+	<button type="button" id="btn_hw">Получить альбом</button>
+	<div id="album"></div>
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
