@@ -88,3 +88,6 @@ API Key: a920020b8a37e76c3fb84f76eaa7fba2
 
 ### Библиотека jQuery
 ##### [Домашняя работа](https://github.com/AdukarIT/PavlenkoAA/tree/master/JS/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0%20jQuery)
+
+### Библиотека jQuery. AJAX и анимации
+##### [Практика + домашняя работа](https://github.com/AdukarIT/PavlenkoAA/tree/master/JS/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0%20jQuery.%20AJAX%20%D0%B8%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D0%B8)
