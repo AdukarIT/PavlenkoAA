@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Библиотека jQuery. Плагины jQuery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="commentForm" method="post">
+  <p>
+    <label class="form-label" for="name">Фамилия и имя:</label><br>
+    <input id="name" type="text" name="name" required>
+  </p>
+  <p>
+    <label class="form-label" for="phone">Номер телефона после кода страны:</label><br>
+    <input id="phone" type="tel" name="phone" required>
+  </p>
+  <p>
+    <label class="form-label" for="email">E-mail:</label><br>
+    <input id="email" type="email" name="email" required>
+  </p>
+  <p>
+    <label class="form-label" for="delivery" id="delivery">Способ доставки:</label><br>
+    <input id="delivery" type="radio" name="delivery" value="pickup"> Самовывоз со склада<br>
+    <input id="delivery" type="radio" name="delivery" value="courier"> Курьером по Минску<br>
+    <input id="delivery" type="radio" name="delivery" value="post"> Почтой
+  </p>
+  <p>
+    <label class="form-label" for="comment">Комментарий к заказу:</label><br>
+    <textarea rows="5" cols="22" name="text" id="comment"></textarea>
+  </p>
+  <p>
+    <label class="form-label" for="agree">Я прочитал и согласен с <a href="#">условиями доставки</a>:</label><br>
+    <input id="agree" type="checkbox" name="agree" required>
+  </p>
+  <p>
+    <input type="submit" value="Подтвердить заказ">
+  </p>
+</form>
+
+
+
+	<script src="jquery-3.4.1.min.js"></script>
+<script src="js/jquery.validationEngine.js"></script>
+<script src="js/jquery.validationEngine-ru.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -199,7 +199,7 @@ function getHappyDay(date){
 	let db =  Math.floor((birthday - today) / (1000*60*60*24));  /*подсчет дней до др*/
 
 	let oday = new Date(dateArr);
-let day = Math.round((today.getTime() - oday.getTime()) / (1000*60*60*24));/*подсчет дней до тысячного юбилея*/
+let day = Math.ceil((today.getTime() - oday.getTime()) / (1000*60*60*24));/*подсчет дней до тысячного юбилея*/
 
 let sumDay=0;
 let i = 0; 
@@ -210,7 +210,7 @@ sumDay = i - day;
 
  return "Дней до ДР осталось - " + db + "." + " Дней до тысячного юбилея осталось - " + sumDay;
 }
-console.log(getHappyDay("10-05-1988"));
+console.log(getHappyDay("02-09-1988"));
 
 //11 - Напишите функцию, которая принимает число, проверяет, является ли оно квадратом целого числа. Если это так,
 //  функция возвращает квадратный корень исходного числа; в ином случае генерирует ошибку. Используя задачу 2 из
