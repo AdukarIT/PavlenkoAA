@@ -3,10 +3,14 @@
 <head>
 	<title>Библиотека jQuery. Плагины jQuery</title>
 	<meta charset="utf-8">
+  <link rel="stylesheet" href="jquery-ui.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form id="commentForm" method="post">
+
+<!-- практика -->
+
+<!-- <form id="commentForm" method="post">
   <p>
     <label class="form-label" for="name">Фамилия и имя:</label><br>
     <input id="name" type="text" name="name" required>
@@ -36,13 +40,60 @@
   <p>
     <input type="submit" value="Подтвердить заказ">
   </p>
-</form>
+</form> -->
+
+<!-- домашняя работа -->
+
+<div id="form_comment" title="Новое обращение">
+  <form id="new_comment">
+    <fieldset>
+      <label for="name">Имя</label>
+      <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" required>
+      <label for="tel">Телефон</label>
+      <input type="tel" name="tel" id="tel" class="text ui-widget-content ui-corner-all" required>
+      <label for="datepicker">Дата</label>
+      <input type="text" name="date" id="datepicker" class="text ui-widget-content ui-corner-all" autocomplete="off" required>
+      <label for="comment">Тип обращения: вопрос, жалоба, благодарность</label>
+      <input type="text" name="comment" id="comment" class="text ui-widget-content ui-corner-all" required>
+
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div>
+
+
+<div id="users-contain" class="ui-widget">
+  <table id="users" class="ui-widget ui-widget-content">
+    <thead>
+      <tr class="ui-widget-header ">
+        <th>Имя клиента</th>
+        <th>Телефон</th>
+        <th>Дата обращения</th>
+        <th>Тип обращения: вопрос, жалоба, благодарность</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Травкин Полынь Бурьянович</td>
+        <td>222-22-22</td>
+        <td>01.01.2000</td>
+        <td>лось</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<button id="add-comment">Создать</button>
+
+<div id="dialog-confirm" title="Empty the recycle bin?">
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Позиция будет удалена! Вы уверены?</p>
+</div>
+<button id="delete-comment">Удалить</button>
 
 
 
-	<script src="jquery-3.4.1.min.js"></script>
-<script src="js/jquery.validationEngine.js"></script>
-<script src="js/jquery.validationEngine-ru.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery.validate.js"></script>
+  <script src="jquery-ui.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
