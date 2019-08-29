@@ -1,5 +1,5 @@
 ## [Project API](https://github.com/AdukarIT/PavlenkoAA/tree/master/Project%20API)  /  [ссылка](https://pavlenuch.github.io/ProjectAPI/index.html)
-## [CRUD](https://github.com/AdukarIT/PavlenkoAA/tree/master/Progect%20Writers) / [ссылка](pavlenuch.github.io/ProgectWriters/index.html)
+## [CRUD](https://github.com/AdukarIT/PavlenkoAA/tree/master/Progect%20Writers) / [ссылка](https://pavlenuch.github.io/ProgectWriters/index.html)
 # Итоговая работа по вёрстке (HTML/CSS).
 ##### [Home](https://pavlenuch.github.io/public/index.html)
 ##### [Blog](https://pavlenuch.github.io/public/blog.html)
