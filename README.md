@@ -1,9 +1,9 @@
 ## [Project API](https://github.com/AdukarIT/PavlenkoAA/tree/master/Project%20API)  /  [ссылка](https://pavlenuch.github.io/ProjectAPI/index.html)
 ## [CRUD](https://github.com/AdukarIT/PavlenkoAA/tree/master/Progect%20Writers) / [ссылка](https://pavlenuch.github.io/ProgectWriters/index.html)
 # Итоговая работа по вёрстке (HTML/CSS).
-##### [Home](https://pavlenuch.github.io/public/index.html)
-##### [Blog](https://pavlenuch.github.io/public/blog.html)
-##### [Contact](https://pavlenuch.github.io/public/contact-1.html)
+##### [Home](https://pavlenuch.github.io/shield_theme/public/index.html)
+##### [Blog](https://pavlenuch.github.io/shield_theme/public/blog.html)
+##### [Contact](https://pavlenuch.github.io/shield_theme/public/contact-1.html)
 
 ## Введение в Web-разработку
 ##### Задание 1. - 200 OK. - Internet Information Services. - www.google.com
